@@ -17,7 +17,7 @@ Code description:
 
 Additional folders:
 
-* data/: use this folder to download the raw data and metadata tables from EGA (with controlled access, accession number EGAS00001004951). 
+* data/: create and use this folder to download the raw data and metadata tables from EGA (with controlled access, accession number EGAS00001004951). 
 * R/: additional R functions, called by the different scripts
 
 R packages required:
