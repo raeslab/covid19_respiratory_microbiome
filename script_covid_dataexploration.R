@@ -168,8 +168,18 @@ ggsave(filename = "output_plots_2020/samples_meropenem_ventilation.pdf", device 
 
 
 #### 5. Abundance table: load and convert to phyloseq OTU table ####
-abundance_table <- read_tsv("data/COVID_19_abundance_table_dec2020.txt") %>%
-  gather(key="ASV", value="counts", -Sample) 
+ps <- readRDS("data/COVID_contamremoved.rdata")
+abundance_table <- otu_table(ps) 
+
+abundance_table <- abundance_table %>% 
+  as.data.frame() %>% 
+  as_tibble() %>%
+  mutate(ID=rownames(abundance_table)) %>% 
+  gather(key="ASV", value="counts", -ID) 
+
+sample_ids <- read_tsv("sample_ids.txt", col_names=F)
+abundance_table <- abundance_table %>% left_join(sample_ids, by=c("ID" = "X1"))
+colnames(abundance_table)[4] <- "Sample"
 
 abundance_table$Sample <- gsub(abundance_table$Sample, pattern="\\.[[:digit:]]", replacement="")
 
@@ -200,15 +210,8 @@ rownames(metadata_reduced_df) <- metadata_reduced_df$sample
 samples <- sample_data(metadata_reduced_df)
 ASV <- otu_table(as.matrix(abundance_table), taxa_are_rows = F)
 
-# asv assignation (taxonomic assignation using RDP classifier within DADA2)
-taxonomy_table <- read_tsv("data/COVID_19_taxa_SV_dec2020.tsv") %>% 
-  dplyr::select(-ASV_seq) %>% 
-  as.data.frame()
-row.names(taxonomy_table) <- taxonomy_table[,1]
-taxonomy_table <- taxonomy_table[,-1]
-
-# assign taxonomy
-taxonomy <- tax_table(as.matrix(taxonomy_table))
+# get taxonomy
+taxonomy <- tax_table(ps)
 
 # make phyloseq object
 covid19 <- phyloseq(ASV, taxonomy, samples)
