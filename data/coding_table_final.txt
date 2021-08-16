@@ -1,0 +1,134 @@
+Variable	Explanation	Type	Notation	Class
+sample	sample ID	text	NA	Technical
+patient	NA	NA	NA	Technical
+moment	NA	NA	NA	Technical
+date_icu_admission	NA	NA	NA	Technical
+date_icu_discharge	NA	NA	NA	Technical
+date_hospital_discharge	NA	NA	NA	Technical
+date	NA	NA	NA	Technical
+age_bas	age at inclusion	numeric	NA	Antropometrics
+sex_bas	sex	text	1-male; 2-female	Antropometrics
+height_bas	height	numeric	NA	Antropometrics
+weight_bas	weight	numeric	NA	Antropometrics
+bmi_bas	bmi	numeric	NA	Antropometrics
+dia_bas	history of diabetes	text	1-yes; 2-no; 3-unknown	Comorbidities
+diacomp_bas	diabetic complications	text	1-yes; 2-no; 3-unknown	Comorbidities
+diains_bas_2	insuline dependent - no	text	1-yes; 0-no	Comorbidities
+aht_bas	history of arterial hypertension	text	1-yes; 2-no; 3-unknown	Comorbidities
+smoking_bas	smoking history	text	1-active; 2-former; 3-never; 4-unknown	Comorbidities
+hiv_bas	HIV	text	1-yes; 2-no; 3-unknown	Comorbidities
+comorb_bas	other relevant comorbidities	text	1-yes; 2-no	Comorbidities
+othercomorb_bas	other relevant comorbidities (specify)	text	NA	Comorbidities
+ccmi_bas	charlson comorbidity index	numeric	NA	Comorbidities
+datebasvis_bas	date of admision at ER, ward or ICU	date	NA	COVID
+onset_date_bas	onset date of first symptoms	date	NA	COVID
+sympt_bas_1	symptoms at admission: history of fever	text	1-yes; 0-no	COVID
+sympt_bas_2	symptoms at admission: sore throat	text	1-yes; 0-no	COVID
+sympt_bas_4	symptoms at admission: shortness of breath	text	1-yes; 0-no	COVID
+sympt_bas_6	symptoms at admission: cough	text	1-yes; 0-no	COVID
+sympt_bas_8	symptoms at admission: chest pain	text	1-yes; 0-no	COVID
+sympt_bas_11	symptoms at admission: fatigue	text	1-yes; 0-no	COVID
+sympt_bas_16	symptoms at admission: vomiting/nausea	text	1-yes; 0-no	COVID
+sympt_bas_17	symptoms at admission: diarrhea	text	1-yes; 0-no	COVID
+hc_bas	blood cultures taken? (at dmission)	text	1-yes; 0-no	Microbiology
+bact_hc_bas_1	result blood culture: negative	text	1-yes; 0-no	Microbiology
+resqualswab_bas	result COVID PCR	text	1-positive; 2-negative	Microbiology
+resppanel_swab_bas	respiratory panel performed	text	1-small panel; 2-large panel; 3-none	Microbiology
+deval_cs_pat	clinical status of the day	text	1-not hospitalized, no limitations on activities; 2-not hospitalized, limitations on activities; 3-hospitalized, not requiring oxygen; 4-hospitalized, requiring oxygen; 5-hospitalized, on non-invasive ventilation; 6-hospitalized, on invasive mechanical ventilation or ECMO, 7-death	COVID
+deval_ward_ongoing	patient on ward at the end of day?	text	1-yes; 0-no	COVID
+deval_icu_ongoing	patient on ICU at the end of day?	text	1-yes; 0-no	COVID
+apacheii_deval	apache II score on day 1 of hospitalization	numeric	NA	COVID
+sofa_deval	SOFA score (Sequential Organ Failure Assessment score) on day 1 of hospitalization	numeric	NA	COVID
+deval_sup_specoxyg	specify type of oxygen support	text	1-oxygen; 2-high flow oxygen support; 3-non-invasive ventilation; 4-invasive ventilation; 5-prone ventilation; 6-extra corporeal life support (ECMO); 7-inhaled nitric oxide: 8-unknown	COVID
+o2flow_deval	value for oxygen flow	numeric	NA	COVID
+hc_deval	blood cultures taken? (for the day)	text	1-yes; 0-no	Microbiology
+bact_hc_deval_1	daily result blood culture: negative	text	1-yes; 0-no	Microbiology
+oth_bact_hc_deval	other type of bacteria in daily blood culture	text	NA	Microbiology
+oth_bact_bas_deval	other type of bacteria in daily BAS culture	text	NA	Microbiology
+res_asp_broncho_deval	result aspergillus antigen (for the day)	numeric	NA	Microbiology
+balcult_deval	BAL culture performed? (for the day)	text	1-yes; 0-no	Microbiology
+oth_balcult_deval	other type of bacteria in daily BAL culture	text	NA	Microbiology
+resppanel_broncho_deval	respiratory panel performed on daily BAL?	text	1-small panel; 2-large panel; 3-none	Microbiology
+specmedcov_deval_2	COVID-meds: hydroxychloroquine	text	1-yes; 0-no	Medication
+specmedcov_deval_11	COVID-meds: tranexamine acid	text	1-yes; 0-no	Medication
+cs_deval	pacient received systemic corticosteroids today	text	1-yes; 0-no	Medication
+ab_deval	pacient received antibiotics today?	text	1-yes; 0-no	Medication
+specab1_deval_1	antibiotics today: docephine-ceftriaxone	text	1-yes; 0-no	Medication
+specab1_deval_4	antibiotics today: tazocin-piperacilline-tazobactam	text	1-yes; 0-no	Medication
+specab1_deval_5	antibiotics today: meronem-meropenem	text	1-yes; 0-no	Medication
+specab1_deval_9	antibiotics today: other	text	1-yes; 0-no	Medication
+specab2_deval	antibiotics today: specify other	text	NA	Medication
+date_ward_admission	NA	NA	NA	Technical
+group	NA	NA	NA	COVID
+length_icu	NA	NA	NA	COVID
+covid_pcr_baseline	NA	NA	NA	COVID
+crp_deval	C reactive protein levels	numeric	NA	COVID
+dim_deval	D-dimer levels	numeric	NA	COVID
+wbc_deval	White blood cell count	numeric	NA	COVID
+neutc_deval	Neutrophil count	numeric	NA	COVID
+eosc_deval	Eosinophil count	numeric	NA	COVID
+lymphc_deval	Lymphocite count	numeric	NA	COVID
+nl_ratio	Neutrophils to lymphocytes ratio	numeric	NA	COVID
+comorb_score	Comorbidity score	numeric	NA	Comorbidities
+blood	Study sample blood draw taken?	numeric	1-yes; 0-no	Technical
+home1_revalid2still_hosp3_8jun_fatal4	Patient status	text	1-home; 2-revalid; 3-still hospitalized; 4-deceased	COVID
+day_icu_at_sampling	Day ICU at sampling	numeric	NA	COVID
+aspergillus	Aspergillus detected	text	1-yes; 0-no	Microbiology
+ercc3	Expression ERCC3	numeric	NA	nCounter
+fcf1	Expression FCF1	numeric	NA	nCounter
+g6pd	Expression G6PD	numeric	NA	nCounter
+gpatch3	Expression GPATCH3	numeric	NA	nCounter
+gusb	Expression GUSB	numeric	NA	nCounter
+hdac3	Expression HDAC3	numeric	NA	nCounter
+hprt1	Expression HPRT1	numeric	NA	nCounter
+b_cells_naive	Levels B cells naive	numeric	NA	nCounter
+b_cells_memory	Levels B cells memory	numeric	NA	nCounter
+plasma_cells_28	NA	NA	NA	nCounter
+t_cells_cd8_29	NA	NA	NA	nCounter
+t_cells_cd4_naive	Levels T cells CD4 naive	numeric	NA	nCounter
+t_cells_cd4_memory_resting	Levels T cells CD4 memory resting	numeric	NA	nCounter
+t_cells_cd4_memory_activated	Levels T cells CD4 memory activated	numeric	NA	nCounter
+t_cells_follicular_helper	Levels T cells follicular helper	numeric	NA	nCounter
+t_cells_regulatory_tregs	Levels T cells regulatory (Tregs)	numeric	NA	nCounter
+t_cells_gamma_delta	Levels T cells gamma delta	numeric	NA	nCounter
+nk_cells_resting	Levels NK cells resting	numeric	NA	nCounter
+nk_cells_activated	Levels NK cells activated	numeric	NA	nCounter
+monocytes_38	NA	NA	NA	nCounter
+macrophages_m0	Levels Macrophages M0	numeric	NA	nCounter
+macrophages_m1	Levels Macrophages M1	numeric	NA	nCounter
+macrophages_m2	Levels Macrophages M2	numeric	NA	nCounter
+dendritic_cells_resting	Levels Dendritic cells resting	numeric	NA	nCounter
+dendritic_cells_activated	Levels Dendritic cells activated	numeric	NA	nCounter
+mast_cells_resting	Levels Mast cells resting	numeric	NA	nCounter
+mast_cells_activated	Levels Mast cells activated	numeric	NA	nCounter
+eosinophils_46	NA	NA	NA	nCounter
+neutrophils_47	NA	NA	NA	nCounter
+b_cells	Levels B cells	numeric	NA	nCounter
+plasma_cells_49	NA	NA	NA	nCounter
+t_cells_cd8_50	NA	NA	NA	nCounter
+t_cells_cd4	Levels T cells CD4	numeric	NA	nCounter
+nk_cells	Levels NK cells	numeric	NA	nCounter
+monocytes_53	NA	NA	NA	nCounter
+dendritic_cells	Levels Dendritic cells	numeric	NA	nCounter
+mast_cells	Levels Mast cells	numeric	NA	nCounter
+eosinophils_56	NA	NA	NA	nCounter
+neutrophils_57	NA	NA	NA	nCounter
+cv_229e_s	Levels CV-229E - S	numeric	NA	Microbiology
+cv_oc43_19572_be_2004_complete_genome	Levels CV-OC43-19572-BE-2004 - complete genome	numeric	NA	Microbiology
+flu_a_h1n1_m	Levels FLU A-H1N1 - M	numeric	NA	Microbiology
+flu_b_nucleoprotein	Levels FLU B - nucleoprotein	numeric	NA	Microbiology
+hi_16s	Levels HI - 16S	numeric	NA	Microbiology
+human_tmprss2	Levels Human TMPRSS2	numeric	NA	Microbiology
+human_coronavirus_hku1	Levels Human coronavirus HKU1	numeric	NA	Microbiology
+human_coronavirus_nl63	Levels Human coronavirus NL63	numeric	NA	Microbiology
+lyta_streptococcus_pneumoniae	Levels LytA Streptococcus Pneumoniae	numeric	NA	Microbiology
+mc_uspa2	Levels MC - UspA2	numeric	NA	Microbiology
+mp_fh_16s	Levels MP-FH - 16S	numeric	NA	Microbiology
+n_ace2	Levels N-ACE2	numeric	NA	nCounter
+rhv_a1_polyprotein	Levels RHV-A1 - polyprotein	numeric	NA	Microbiology
+rsv_a_hq699285	Levels RSV A - HQ699285	numeric	NA	Microbiology
+rsv_b_hq699309	Levels RSV B - HQ699309	numeric	NA	Microbiology
+sa_s33_r_complete_sequence	Levels SA-S33 R - complete sequence	numeric	NA	Microbiology
+hmpv_f	Levels hMPV - F	numeric	NA	Microbiology
+total_sarscov2_viral_load	Levels Total SARSCoV2 viral load	numeric	NA	COVID
+date_hospital_admission	NA	NA	NA	Technical
