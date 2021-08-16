@@ -18,7 +18,9 @@ Code description:
 
 Additional folders:
 
-* data/: create and use this folder to download the raw data and metadata tables from EGA (with controlled access, accession number EGAS00001004951). 
+* data/: use this folder to download the raw data and metadata tables from EGA (with controlled access, accession number EGAS00001004951). Contains two additional files:
+  - sample_ids.txt: contains sample IDs to preprocess the data (used in script_covid_dataexploration.R)
+  - coding_table_final.txt: contains explanations of the metadata variables (used in script_covid_betadiv.R)
 * R/: additional R functions, called by the different scripts
 
 R packages required:
