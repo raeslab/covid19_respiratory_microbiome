@@ -16,8 +16,8 @@ library(ggiraph)
 #### 1. Load data ####
 
 # metadata 
-load("data/metadata_table_16S_samples.RData") # data object per samples (only info from day of sampling)
-load("data/metadata_table_16S_patients.RData") # data object per patients (info from all days of the study)
+metadata_table_16S_samples <- read_tsv("data/metadata_table_16S_samples.txt") # data object per samples (only info from day of sampling)
+metadata_table_16S_patients <- read_tsv("data/metadata_table_16S_patients.txt") # data object per patients (info from all days of the study)
 
 metadata_table_16S_patients <- metadata_table_16S_patients %>% 
   filter(!is.na(subjid)) # remove blanks/controls from metadata table
