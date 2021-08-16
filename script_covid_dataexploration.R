@@ -177,7 +177,7 @@ abundance_table <- abundance_table %>%
   mutate(ID=rownames(abundance_table)) %>% 
   gather(key="ASV", value="counts", -ID) 
 
-sample_ids <- read_tsv("sample_ids.txt", col_names=F)
+sample_ids <- read_tsv("data/sample_ids.txt", col_names=F)
 abundance_table <- abundance_table %>% left_join(sample_ids, by=c("ID" = "X1"))
 colnames(abundance_table)[4] <- "Sample"
 
