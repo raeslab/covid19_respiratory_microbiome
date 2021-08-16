@@ -9,11 +9,12 @@ Contributors:
 
 Code description:
 
-* COVID19_CODE_preprocessing_macro_micro_diversity.R: raw data preprocessing and macro-vs-micro average diversity analyses
+* script_covid_preprocessing.R: raw data preprocessing
 * script_covid_dataexploration.R: initial data exploration and plots 
 * script_covid_alphadiv.R: Alpha diversity analyses and glmm modeling
 * script_covid_betadiv.R: dbRDA analyses of microbiome composition
 * script_covid_diffabundances.R: differential taxon abundance analyses
+* script_covid_species_strain_analyses.R: macro-vs-micro diversity analyses
 
 Additional folders:
 
