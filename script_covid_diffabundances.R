@@ -11,6 +11,7 @@ library(colortools)
 library(ggiraphExtra)
 library(ggiraph)
 library(DESeq2)
+library(CoDaSeq)
 
 
 #### 1. load data ####
