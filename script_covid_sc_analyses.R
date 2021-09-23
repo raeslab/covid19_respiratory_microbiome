@@ -12,6 +12,7 @@ library(RColorBrewer)
 library(chisq.posthoc.test)
 library(wesanderson)
 library(patchwork)
+library(Seurat)
 source("R/corrmod.R")
 source("R/DoMultiBarHeatmap.R")
 
