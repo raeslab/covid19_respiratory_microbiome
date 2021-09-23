@@ -84,6 +84,6 @@ R packages required:
 6. Run `script_covid_betadiv.R`. This will perform the beta diversity analyses and modeling section. 
 7. Run `script_covid_diffabundances.R`. This will perform the differential taxon abundances reported in the manuscript.
 8. Run `script_covid_species_strain_analyses.R`. This will perform the analyses on macro- and micro-diversity, shown in Figure 2. 
-9. Download and process raw sequencing files from the scRNA-seq lower respiratory tract cohort [link to study](https://ega-archive.org/studies/EGAS00001004717) and [link to study website](https://lambrechtslab.sites.vib.be/en/pan-cancer-blueprint-tumour-microenvironment-0)
+9. Download and process raw sequencing files from the scRNA-seq lower respiratory tract cohort. [link to study](https://ega-archive.org/studies/EGAS00001004717) and [link to study website](https://lambrechtslab.sites.vib.be/en/immune-atlas)
 10. Run `script_covid_sc_analyses.R`. This will perform the analyses on the lower respiratory tract cohort, shown in Figure 3. 
 
