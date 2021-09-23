@@ -1,4 +1,8 @@
 # COVID-19 respiratory microbiome analysis code
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/vllorens/covid19_respiratory_microbiome/blob/master/LICENSE)
+[![DOI](https://zenodo.org/badge/409586241.svg)](https://zenodo.org/badge/latestdoi/409586241)
+
 Code accompanying the manuscript "Clinical practices underlie COVID-19 patient respiratory microbiome composition and its interactions with the host". Link to preprint: https://www.medrxiv.org/content/10.1101/2020.12.23.20248425v3
 
 ## Contributors: 
