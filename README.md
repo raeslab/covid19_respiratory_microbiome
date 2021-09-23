@@ -17,6 +17,7 @@ Code accompanying the manuscript "Clinical practices underlie COVID-19 patient r
 * script_covid_betadiv.R: dbRDA analyses of microbiome composition
 * script_covid_diffabundances.R: differential taxon abundance analyses
 * script_covid_species_strain_analyses.R: macro-vs-micro diversity analyses
+* script_covid_sc_analyses.R: analyses on the scRNA-seq data of the lower respiratory tract cohort
 
 ### Additional folders:
 
@@ -66,6 +67,11 @@ R packages required:
 * DESeq2 (v1.30.1)
 * mixOmics (v6.14.1)
 * lubridate (v1.7.10)
+* Seurat (v4.0.4)
+* chisq.posthoc.test (v0.1.2)
+* ggmosaic (v0.3.3)
+* patchwork (v1.1.1)
+* gtable(v0.3.0)
 
 
 ## Running instructions
@@ -78,4 +84,6 @@ R packages required:
 6. Run `script_covid_betadiv.R`. This will perform the beta diversity analyses and modeling section. 
 7. Run `script_covid_diffabundances.R`. This will perform the differential taxon abundances reported in the manuscript.
 8. Run `script_covid_species_strain_analyses.R`. This will perform the analyses on macro- and micro-diversity, shown in Figure 2. 
+9. Download and process raw sequencing files from the scRNA-seq lower respiratory tract cohort [link to study](https://ega-archive.org/studies/EGAS00001004717) and [link to study website](https://lambrechtslab.sites.vib.be/en/pan-cancer-blueprint-tumour-microenvironment-0)
+10. Run `script_covid_sc_analyses.R`. This will perform the analyses on the lower respiratory tract cohort, shown in Figure 3. 
 
